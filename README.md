@@ -16,6 +16,7 @@ Missing Values:
 
 For numerical columns, missing values were filled using Scikit-learn's SimpleImputer with the mean strategy.
 For categorical columns, missing values were handled using OneHotEncoder, which transforms categorical features into binary-encoded vectors.
+
 Scaling:
 Numerical data was scaled between 0 and 1 using MinMaxScaler to ensure that all features contribute equally to the model, assigning the correct weight to each column.
 
@@ -24,7 +25,9 @@ Numerical data was scaled between 0 and 1 using MinMaxScaler to ensure that all 
 The dataset was divided into three parts:
 
 Training Data: Used to train the Logistic Regression model.
+
 Validation Data: Used to tune hyperparameters and validate the model during training.
+
 Test Data: Used to evaluate the final performance of the model.
 
 # Logistic Regression Model
@@ -33,6 +36,8 @@ The model used in this project is a Logistic Regression classifier from Scikit-l
 
 # Model Performance
 The best performing model achieved an accuracy of 85.51% on the validation set.
+
 The model performance is consistent across the training, validation, and test sets, indicating that the model is well generalized.
+
 Categorical features showed slightly lower predictive power compared to numerical features.
 
